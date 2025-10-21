@@ -74,7 +74,7 @@ Step 4 TSL
 
 <img width="1920" height="1080" alt="ทีเอสแอล" src="https://github.com/user-attachments/assets/5aa636d8-ea3a-493e-a98b-e0fe1936c0d6" />
 
-ทีนี้ก็็เลื่อนหา flag
+ทีนี้ก็เลื่อนหา flag
 
 XXXXX ไม่ใช้ flag นะ คือปิดไว้ จะได้ทำเอง
 
