@@ -22,7 +22,7 @@ Step 2 404 Not Found
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5cb312ae-ad66-41e0-82a4-298ae3dd9355" />
 
-2.1 คลิกขวา 1 ครั้ง แล้วเลื่อก View page source
+2.1 คลิกขวา 1 ครั้ง แล้วเลือก View page source
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/17f9f6bb-737c-42ab-9a25-c4cc4a6b2613" />
 
