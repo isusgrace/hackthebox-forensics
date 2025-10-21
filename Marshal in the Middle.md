@@ -64,7 +64,7 @@ Step 4 TSL
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ecbdc033-1e82-4b02-a6dd-b786c701a391" />
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/27454160-4d8a-4c44-9159-c124b711e449" /
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/27454160-4d8a-4c44-9159-c124b711e449" />
 
 สิ่งที่เราจะทำในลำดับถัดมา คือไปที่ edit เลือก Preferences จากนั้นหา Protocols และกดมัน แล้วเลื่อนหา TSL เมื่อหาเจอแล้วก็กดอัปโหลดไฟล์ที่มีชื่อว่า"secrets" จากนั้นกด OK
 
