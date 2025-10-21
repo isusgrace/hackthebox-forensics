@@ -54,7 +54,7 @@ curl -d "api_user_key=ed67c1aec48d47270dd002d0baa29814&api_dev_key=bb8aa307a7d4b
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8792cab7-636b-40e4-894d-b19bcaa6561b" />
 
-ลองดูที่แพ็กเกจบางส่วนที่มีข้อมูลคำขอโพสต์ เราจะใช้ ้http.request.method==POST และเราก็จะได้รับแพ็กเกจ HTTP ทั้งหมดที่ถูกเข้ารหัสไว้ก่อนหน้านี้ ในส่วนของการถอดรหัสแพ็กเกจเหล่านี้ กลับไปดูที่ไฟล์ที่มีชื่อว่า"secrets"
+ลองดูที่แพ็กเกจบางส่วนที่มีข้อมูลคำขอ POST เราจะใช้ ้http.request.method==POST และเราก็จะได้รับแพ็กเกจ HTTP ทั้งหมดที่ถูกเข้ารหัสไว้ก่อนหน้านี้ ในส่วนของการถอดรหัสแพ็กเกจเหล่านี้ กลับไปดูที่ไฟล์ที่มีชื่อว่า"secrets"
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/11aec5ac-6230-49cf-b9a4-243a071fd708" />
 
