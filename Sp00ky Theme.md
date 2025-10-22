@@ -209,9 +209,9 @@ drwxr-xr-x  5 kali kali    4096 Oct  3  2024  plasma
 
 - สิทธิ์ — เช่น drwxr-xr-x 
 
-ตัวแรกระบุชนิดไฟล์: d = directory, - = regular file, l = symlink
+  ตัวแรกระบุชนิดไฟล์: d = directory, - = regular file, l = symlink
 
-ตัวต่อมาแบ่งเป็น 3 ชุด แต่ละชุด r=read w=write x=execute
+  ตัวต่อมาแบ่งเป็น 3 ชุด แต่ละชุด r=read w=write x=execute
 
 - จำนวนลิงก์ — จำนวน hard links
 
