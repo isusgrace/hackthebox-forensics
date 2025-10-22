@@ -335,7 +335,9 @@ echo "952MwBHNo9lb0M2X0FzX/Eycz02MoR3X5J2XkNjb3B3eCRFS" | rev | base64 -d
 └─$ echo "952MwBHNo9lb0M2X0FzX/Eycz02MoR3X5J2XkNjb3B3eCRFS" | rev | base64 -d
 HTB{XXXXX}
 ```
-นี่คือสิ่งที่ได้ XXXXX ไม่ใช้ flag นะ คือปิดไว้ จะได้ทำเอง
+นี่คือสิ่งที่ได้
+
+XXXXX ไม่ใช้ flag นะ คือปิดไว้ จะได้ทำเอง
 
 เพิ่มเติม
 - ฉันไม่สามารถวางรูปในหน้า CyberChef ได้ เนื่องจากเกิดปัญหานิดหน่อย ฉันจะรีบหาทางแก้โดยเร็วที่สุด
