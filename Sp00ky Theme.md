@@ -319,7 +319,7 @@ function calcSpeedData(prevTransferData, nextTransferData, duration) {
     return speedData;
 }
 ```
-ในโฟลเดอร์ code จะมีไฟล์ utils.js ฉันลองใช้คำสั่ง cat เพื่อดูเนื้อหาของไฟล์
+ในโฟลเดอร์ code จะมีไฟล์ utils.js ฉันใช้คำสั่ง cat เพื่อดูเนื้อหาของไฟล์
 ```
 952MwBHNo9lb0M2X0FzX/Eycz02MoR3X5J2XkNjb3B3eCRFS
 ```
