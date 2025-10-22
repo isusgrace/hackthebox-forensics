@@ -323,7 +323,7 @@ function calcSpeedData(prevTransferData, nextTransferData, duration) {
 ```
 952MwBHNo9lb0M2X0FzX/Eycz02MoR3X5J2XkNjb3B3eCRFS
 ```
-มีบรรทัดหนึ่งที่น่าสนใจ มันคือ flag ที่ถูกเข้ารหัสด้วย Base64 แต่ต้องทำการ Reverse 
+มีบรรทัดหนึ่งที่น่าสนใจ มันคือ flag ที่ถูกเข้ารหัสด้วย Base64 แต่ต้องทำการ Reverse ก่อน
 
 กระบวนการนี้เราสามารถทำได้โดยใช้ CyberChef 
 ```
