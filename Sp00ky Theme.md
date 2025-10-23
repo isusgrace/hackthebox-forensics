@@ -10,23 +10,23 @@ Step 1 สร้าง Directory และนำเข้าไฟล์
 mkdir <new directory>
 ```
 ใช้คำสั่ง mkdir ใช้สำหรับสร้างไดเรกทอรี (หรือโฟลเดอร์) ใหม่บนระบบไฟล์
-
-ตามด้วย คำสั่ง mv ใช้ในการย้ายหรือเปลี่ยนชื่อไฟล์และไดเร็กทอรี ในที่นี้เราจะใช้คำสั่ง mv ในการย้ายไฟล์
-
 ```
 cd <new directory>
 ```
 ตามด้วย คำสั่ง cd ใช้สำหรับเปลี่ยนไดเรกทอรีหรือโฟลเดอร์ปัจจุบันในเทอร์มินัล
+
+ตามด้วย คำสั่ง mv ใช้ในการย้ายหรือเปลี่ยนชื่อไฟล์และไดเร็กทอรี ในที่นี้เราจะใช้คำสั่ง mv ในการย้ายไฟล์
 
 ```
 ┌──(kali㉿kali)-[~/Downloads]
 └─$ mkdir isusgrace03
 
 ┌──(kali㉿kali)-[~/Downloads]
+└─$ cd isusgrace03
+
+┌──(kali㉿kali)-[~/Downloads/isusgrace03]
 └─$ mv ~/Downloads/'Sp00ky Theme.zip' /home/kali/Downloads/isusgrace03/
                                                                                              
-┌──(kali㉿kali)-[~/Downloads]
-└─$ cd isusgrace03
 ```
 
 Step 2 unzip
