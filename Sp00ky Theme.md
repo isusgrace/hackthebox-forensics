@@ -25,8 +25,7 @@ cd <new directory>
 └─$ cd isusgrace03
 
 ┌──(kali㉿kali)-[~/Downloads/isusgrace03]
-└─$ mv ~/Downloads/'Sp00ky Theme.zip' /home/kali/Downloads/isusgrace03/
-                                                                                             
+└─$ mv ~/Downloads/'Sp00ky Theme.zip' /home/kali/Downloads/isusgrace03/                                                                                         
 ```
 
 Step 2 unzip
