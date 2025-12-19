@@ -14,7 +14,30 @@ mkdir <new directory>
 ```
 cd <new directory>
 ```
-ต่อ
+ตามด้วย คำสั่ง wget ใช้สำหรับดาวน์โหลดไฟล์จากอินเทอร์เน็ตโดยตรงผ่านบรรทัดคำสั่ง
+```
+┌──(kali㉿kali)-[~]
+└─$ cd Downloads
+                                                                                                               
+┌──(kali㉿kali)-[~/Downloads]
+└─$ mkdir Fake_News01
+                                                                                                               
+┌──(kali㉿kali)-[~/Downloads]
+└─$ cd Fake_News01
+                                                                                                               
+┌──(kali㉿kali)-[~/Downloads/Fake_News01]
+└─$ wget "https://labs.hackthebox.com/api/v4/challenge/download/440?auth_user_id=2469954&expires=1766114941&signature=3cf0ca7f1ef0ddc36180c2403d03c632c94d5fc77db9791525648278f18a7774"
+--2025-12-18 21:29:04--  https://labs.hackthebox.com/api/v4/challenge/download/440?auth_user_id=2469954&expires=1766114941&signature=3cf0ca7f1ef0ddc36180c2403d03c632c94d5fc77db9791525648278f18a7774
+Resolving labs.hackthebox.com (labs.hackthebox.com)... 109.176.239.70, 109.176.239.69
+Connecting to labs.hackthebox.com (labs.hackthebox.com)|109.176.239.70|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 32095305 (31M) [application/zip]
+Saving to: ‘440?auth_user_id=2469954&expires=1766114941&signature=3cf0ca7f1ef0ddc36180c2403d03c632c94d5fc77db9791525648278f18a7774’
+
+440?auth_user_id=2469954&ex 100%[==========================================>]  30.61M  4.81MB/s    in 6.4s    
+
+2025-12-18 21:29:12 (4.79 MB/s) - ‘440?auth_user_id=2469954&expires=1766114941&signature=3cf0ca7f1ef0ddc36180c2403d03c632c94d5fc77db9791525648278f18a7774’ saved [32095305/32095305]
+```
 
 Step 2 unzip
 
