@@ -79,9 +79,7 @@ Step 3 file
 persistence.sh: ASCII text, with very long lines (396), with CRLF line terminators
 ```
 
-ในส่วนของข้อนี้ ไฟล์ที่ชื่อว่า "persistence.sh"
-
-มันบอกว่าเป็น ASCII text 
+ในส่วนของข้อนี้ ไฟล์ที่ชื่อว่า "persistence.sh" มันบอกว่าเป็น ASCII text 
 
 ASCII คือ รหัสมาตรฐานที่ใช้แปลงตัวอักษร ตัวเลข และสัญลักษณ์ต่างๆ ให้เป็นตัวเลขไบนารี เพื่อให้คอมพิวเตอร์เข้าใจและแลกเปลี่ยนข้อมูลกันได้ โดยใช้ 7 บิต (128 รหัส)
 
