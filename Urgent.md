@@ -4,7 +4,7 @@ Yes, I can speak Thai.
 
 มา วันนี้เราจะมาทำข้อ Urgent หมวด Forensics ระดับ Very easy
 
-Step 1 Outlook
+# Step 1 Outlook
 
 1.1 ดาวน์โหลดไฟล์จาก hackthebox
 
@@ -18,7 +18,7 @@ Step 1 Outlook
 
 1.3 สังเกตที่ onlineform.html จากนั้นกดลูกศรชี้ลง มันอยู่ข้างไฟล์ทางด้านขวามือ แล้วเลือก save as จะ save ไว้ที่ไหนก็ได้ ขอแค่เปิดไฟล์ได้ ฉันเลือก save ไว้ที่ Downloads
 
-Step 2 404 Not Found
+# Step 2 404 Not Found
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5cb312ae-ad66-41e0-82a4-298ae3dd9355" />
 
